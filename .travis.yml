@@ -1,4 +1,6 @@
-arch: ppc64le
+arch:
+- ppc64le
+- s390x
 language: php
 dist: xenial
 
