@@ -3,7 +3,7 @@ arch:
 - s390x
 - amd64
 language: php
-dist: xenial
+dist: bionic
 
 php:
 - 7.0
