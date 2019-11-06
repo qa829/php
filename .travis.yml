@@ -1,0 +1,55 @@
+arch: ppc64le
+language: php
+dist: xenial
+
+php:
+- 7.1
+
+# cache:
+#   directories:
+#    - /home/travis/.rvm/
+     
+# env:
+# - BUILD=1
+# - BUILD=2
+# - BUILD=3
+
+#install: skip
+
+script:
+# Environment information
+- echo "==> Environment information"
+- uname -a
+- cat /etc/os-release
+- grep ^processor /proc/cpuinfo
+- free -m
+- df -h
+
+# Snaps
+# - echo "==> Snaps"
+# - sudo snap install core || true
+# - sudo snap install core
+# - sudo snap install hello-world
+# - hello-world
+
+# Sleep
+#- sleep 600
+
+# Docker
+- echo "==> Docker"
+- docker info
+- docker run hello-world
+
+# # # ruby
+- echo "==> Ruby"
+- ruby -v
+#- gem i bundler
+# # #- sleep 120
+
+# # # python
+- echo "==> Python"
+- python -V
+
+# # # php
+- echo "==> PHP"
+- php -V
