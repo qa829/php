@@ -1,10 +1,10 @@
 arch:
 - ppc64le
 - s390x
-- amd64
+#- amd64
 - arm64
 language: php
-dist: bionic
+dist: xenial
 
 php:
 - 7.1
