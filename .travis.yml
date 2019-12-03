@@ -1,15 +1,16 @@
 arch:
 - ppc64le
 - s390x
-#- amd64
+- amd64
 - arm64
 language: php
 dist: xenial
 
 php:
-- 7.1
-- 7.2
+#- 7.1
+#- 7.2
 - 7.3
+- 7.4
 
 # cache:
 #   directories:
