@@ -60,3 +60,4 @@ script:
 # # # php
 - echo "==> PHP"
 - php -v
+- php -m
