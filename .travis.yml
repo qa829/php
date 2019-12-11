@@ -1,8 +1,8 @@
 arch:
-- ppc64le
-- s390x
+# - ppc64le
+# - s390x
 - amd64
-- arm64
+# - arm64
 language: php
 dist: xenial
 
